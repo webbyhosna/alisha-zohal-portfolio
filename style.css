@@ -1,0 +1,504 @@
+/* ================= Google Font ==============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*=============== CSS variables===============*/
+
+:root {
+  /*==== Colors ===*/
+  --firstColor: #fad0c4;
+  --secondColor: #555555;
+  --thirdColor: #e6b2ba;
+  --fourthColor: #fff7f3;
+  --textColor: #353535;
+  --btnColor: #c599b6;
+  --whiteColor: #ffffff;
+  --shadow-img: 0 12px 24px #00000066;
+  --shadow-circle: 0 6px 14px #00000066;
+  --shadow-button: 0 -4px 8px #0000004d;
+  --shadow-card: 0 -2px 12px #0000004d;
+  --shadow-text: 0 2px 4px #0000004d;
+
+  /*========== Font and typography ==========*/
+
+  --first-font: "Poppins", sans-serif;
+  --second-font: "Roboto Condensed", sans-serif;
+  --big-font-size: 3.5rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-thin: 100;
+  --z-fixed: 100;
+  /*=============== BASE ===============*/
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* ------------------------------ Header Design ----------------------------- */
+body {
+  font-family: var(--first-font);
+  background: var(--fourthColor);
+  color: var(--textColor);
+}
+header {
+  z-index: var(--z-fixed);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+nav .logo {
+  padding: 20px 30px;
+  font-size: 35px;
+  color: var(--secondColor);
+}
+nav .nav-menu .nav-list {
+  padding: 15px 30px;
+  display: flex;
+}
+nav .nav-menu li {
+  padding-left: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+nav .nav-menu .nav-list li:nth-child(1) {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+nav .nav-menu li a {
+  color: var(--textColor);
+}
+nav .nav-toggle {
+  display: none;
+  font-size: 24px;
+  padding-right: 30px;
+}
+nav .nav-close {
+  display: none;
+  font-size: 24px;
+  padding-right: 30px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 4rem 0;
+}
+.hero .profile-pic {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-circle);
+}
+.hero .profile-pic img {
+  width: 378px;
+  height: 378px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-img);
+}
+.hero .profile-info {
+  text-align: center;
+}
+.hero .profile-info p {
+  font-weight: var(--font-semi-bold);
+  color: var(--secondColor);
+}
+.hero .profile-info h1 {
+  font-size: 50px;
+  font-weight: var(--font-semi-bold);
+}
+.hero .profile-info h2 {
+  color: var(--secondColor);
+  font-size: 30px;
+}
+.hero-btns button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: none;
+  margin: 20px 10px 15px;
+  border: 0.09rem solid var(--secondColor);
+}
+.hero-btns button:hover {
+  background-color: var(--btnColor);
+}
+.hero-btns button a {
+  color: var(--textColor);
+  font-size: 16px;
+}
+.hero .profile-info .hero-socials img {
+  width: 35px;
+  margin-left: 20px;
+}
+
+/* ------------------------------ About Section ----------------------------- */
+
+.about {
+  padding: 5rem 3rem;
+  background-color: var(--whiteColor);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-title p {
+  color: var(--secondColor);
+  font-size: 18px;
+}
+.section-title p::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: var(--secondColor);
+  position: absolute;
+}
+
+.section-title h2 {
+  font-size: 50px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+.about .about-details {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 60px;
+}
+.about .about-pic {
+  width: 450px;
+  height: 300px;
+  border-radius: 35px;
+  border: 2px solid silver;
+}
+
+.about .cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.about .cards .card {
+  text-align: center;
+  border: 1px solid var(--secondColor);
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+.about .cards .card p {
+  color: var(--secondColor);
+}
+.about .cards .card img {
+  width: 30px;
+}
+.about .about-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+}
+.about .about-desc p {
+  text-align: justify;
+}
+.about .about-desc img {
+  width: 30px;
+}
+
+/* --------------------------- Experience Section --------------------------- */
+.experience {
+  padding: 5rem 2rem;
+}
+
+.experience-cards {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.experience-cards .grid-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2rem;
+}
+
+.experience-cards .card {
+  border: 0.09rem solid rgb(163, 163, 163);
+  padding: 20px 30px;
+  border-radius: 35px;
+  background-color: hsl(20, 100%, 96%);
+}
+
+.experience-cards .card h2 {
+  font-size: 26px;
+  color: var(--secondColor);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.experience-cards .card h3 {
+  font-weight: 500;
+}
+.experience-cards .card p {
+  color: var(--secondColor);
+}
+.experience-cards .card .article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.experience-cards .card .article-container article {
+  display: flex;
+  align-items: start;
+  width: 8rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+.experience-cards .card img {
+  width: 30px;
+}
+/* ----------------------------- Project Section ---------------------------- */
+.project {
+  background-color: var(--whiteColor);
+  padding: 5rem 10rem;
+}
+.project .project-body .project-cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.project .project-body .card {
+  border: 0.09rem solid rgb(163, 163, 163);
+  padding: 20px 40px;
+  border-radius: 30px;
+  flex: 1;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}
+.project .project-body .card h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #262626;
+  margin: 15px 0;
+}
+.project .project-body .card img {
+  border-radius: 30px;
+  min-width: 350px;
+  width: 100%;
+}
+/* ----------------------------- Contact Section ---------------------------- */
+.contact {
+  padding: 4rem 3rem;
+  background-color: var(--fourthColor);
+}
+.contact .contact-box {
+  border: 0.09rem dashed rgb(163, 163, 163);
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.contact .contact-box a {
+  color: #000;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact .contact-box a:hover {
+  color: var(--secondColor);
+  text-decoration: underline;
+}
+.contact .contact-box img {
+  width: 40px;
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--btnColor);
+  color: var(--whiteColor);
+  box-shadow: inset var(--shadow-button);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  transition: bottom 0.4s, transform 0.4s;
+}
+.scrollup:hover {
+  transform: translateY(-0.5rem);
+}
+/* Show Scroll Up */
+.show-scroll {
+  bottom: 7rem;
+}
+/* ----------------------------- Footer Section ---------------------------- */
+.footer {
+  padding: 30px;
+  background-color: var(--btnColor);
+  text-align: center;
+  color: #000;
+}
+.footer p a {
+  font-weight: var(--font-semi-bold);
+  color: #262626;
+}
+
+/* ------------------------------- Media Query ------------------------------ */
+@media screen and (max-width: 992px) {
+  nav {
+    align-items: first baseline;
+    padding: 10px 30px;
+    position: relative;
+    z-index: var(--z-fixed);
+  }
+  nav .logo {
+    padding: 15px 30px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    z-index: 30000;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: var(--firstColor);
+    width: 100%;
+    height: 100%;
+    padding: 4rem 1.5rem 2.5rem 5px;
+    justify-content: space-between;
+    transition: left 0.4s;
+  }
+  .show-menu {
+    left: 0;
+  }
+  nav .nav-toggle {
+    display: block;
+  }
+  nav .nav-close {
+    display: block;
+  }
+  .nav-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 0rem;
+  }
+  nav .nav-menu .nav-list {
+    flex-direction: column;
+  }
+  nav .nav-menu .nav-list li {
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+  .hero .profile-pic {
+    width: 280px;
+    height: 280px;
+  }
+  .hero .profile-pic img {
+    width: 278px;
+    height: 278px;
+  }
+
+  .hero .profile-info h1 {
+    font-size: 40px;
+  }
+  .hero .profile-info h2 {
+    font-size: 24px;
+  }
+  .hero .profile-info .hero-socials img {
+    width: 25px;
+  }
+  /* ----- About ------------ */
+
+  .about {
+    padding: 3rem;
+  }
+  .section-title h2 {
+    font-size: 45px;
+  }
+  .about .about-pic {
+    width: 380px;
+  }
+
+  .about .about-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* ----- Experience ------------ */
+
+  .experience {
+    padding: 5rem 2rem;
+  }
+  .experience-cards {
+    width: 80%;
+  }
+  .experience-cards .grid-card {
+    grid-template-columns: 1fr;
+  }
+  .experience-cards .grid-card .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .experience-cards .card .article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3rem;
+  }
+  .project .project-body .card h3 {
+    font-size: 23px;
+  }
+  .contact .contact-box {
+    max-width: 700px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-box a {
+    font-size: 18px;
+  }
+  .footer p,
+  .footer a {
+    font-size: 15px;
+  }
+}
