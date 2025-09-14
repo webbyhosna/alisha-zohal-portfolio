@@ -1,25 +1,34 @@
-<img src="./assets/myCard.png" width="700" title="Gig Image" />
+<p float="left">
+  <img src="assets/screencapture-zohal.png" width="300" height="340"/> &nbsp;
+ <img src="assets/screencapture-alisha.png" width="300"/> 
+</p>
 
-# 👋 &nbsp; Hello, I'm Nasima Akter
+# Alisha-Zohal Portfolio Website
+A responsive and visually appealing personal portfolio website showcasing projects, skills, and contact information. Built with HTML, CSS, JavaScript.
 
-A Full time Frontend Website Developer.
-🏠. &nbsp; Living: Dhaka, Bangladesh
-<br>
-[<img align="left" alt="facebook" title="facebook" width="45" hspace="5" src="./assets/facebook.svg" />][facebook]
+## Features
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.
+- **Home Section**: Introduction and hero banner.
+- **About Section**: Information about the developer.
+- **Projects Section**: Displays completed projects with links.
+- **Contact Section**: Contact form for inquiries.
+- **Navigation Bar**: Smooth scrolling to different sections.
+- **Interactive UI**: Attractive hover effects and animations.
+- 
+## Technologies Used
+- HTML5
+- CSS3
+- CSS FlexBox & Grid
+- Media Query for Responsive Design
+- JavaScript
 
-<br />
-<br />
+## Live Demo
+[View Live Portfolio](https://webbyhosna.github.io/alisha-zohal-portfolio/)
 
-### 👩 &nbsp; About Me:
+## Installation
+1. Clone the repository:  
+   `git clone https://github.com/webbyhosna/alisha-zohal-portfolio.git`
+2. Open `index.html` in your browser.
 
-I'm NASIMA, a skilled Front-end Web Developer.
-I have 3+ years of Experience in this Sector. I'm pro at HTML, CSS, JavaScript and Bootstrap v4/5. As a Front-end web Developer, I can Design any website Mockup or User Interface look at very Unique ,RESPONSIVE and very attractive. Such as Landing page, Portfolio, Restaurant, Business or Shopping site etc.
-<br> <br>
-
-### 👩‍💻 My Skills:
-
-**HTML, CSS, JavaScript, React, Bootstrap and jQuery**
-
-<!-- all link here -->
-
-[facebook]: https://www.facebook.com/webdev.n/
+## Author
+[Asma Ul Hosna](https://github.com/webbyhosna)
